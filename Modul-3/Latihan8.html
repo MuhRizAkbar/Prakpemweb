@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pendaftaran Kursus</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 550px;
+      margin: 0 auto;
+      border: 1px solid black;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      background-color: skyblue;
+      color: red;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px 0;
+    }
+    .form-section {
+      background-color: #666;
+      color: white;
+      padding: 10px;
+    }
+    .form-section h3 {
+      margin-top: 0;
+      color: black;
+    }
+    .form-section table {
+      width: 100%;
+      font-size: 14px;
+    }
+    .form-section td {
+      padding: 4px;
+      vertical-align: top;
+    }
+    .form-section input[type="text"],
+    .form-section input[type="email"],
+    .form-section select {
+      width: 160px;
+    }
+    .form-section input[type="radio"],
+    .form-section input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    .form-section .dropdown-row {
+      padding-top: 8px;
+      padding-bottom: 15px;
+    }
+    .footer {
+      background-color: salmon;
+      padding: 10px;
+    }
+    .footer label {
+      font-weight: bold;
+      color: darkred;
+    }
+    .footer textarea {
+      width: 100%;
+      height: 80px;
+      margin-top: 5px;
+    }
+    .footer .buttons {
+      margin-top: 10px;
+    }
+    .footer input[type="submit"],
+    .footer input[type="reset"],
+    .footer input[type="button"] {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Pendaftaran Kursus</div>
+    <div class="form-section">
+      <h3>Data Diri</h3>
+      <form>
+        <table>
+          <tr>
+            <td>Nama</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Nim</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>E-mail</td>
+            <td><input type="email"></td>
+          </tr>
+          <tr>
+            <td>Tanggal Lahir</td>
+            <td><input type="text" placeholder="hh/bb/tttt"></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+              <input type="radio" name="jk"> Laki-laki<br>
+              <input type="radio" name="jk"> Perempuan
+            </td>
+          </tr>
+          <tr>
+            <td>Pilih Program Kursus</td>
+            <td>
+              <input type="checkbox"> C#<br>
+              <input type="checkbox"> Java<br>
+              <input type="checkbox"> SQL<br>
+              <input type="checkbox"> HTML dan PHP
+            </td>
+          </tr>
+          <tr class="dropdown-row">
+            <td>Pilihan Hari/Jam Kursus</td>
+            <td>
+              <select>
+                <option>Senin - Rabu/09.00 - 11.00</option>
+                <option>Senin - Rabu/13.00 - 15.00</option>
+                <option>Jumat - Sabtu/09.00 - 11.00</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+    </div>
+    <div class="footer">
+      <label>Komentar Anda</label><br>
+      <textarea></textarea>
+      <div class="buttons">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        <input type="button" value="Cancel">
+      </div>
+    </div>
+    </form>
+  </div>
+</body>
+</html>
